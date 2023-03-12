@@ -47,6 +47,25 @@ void StringLength(std::string input) {
 
 // Write a program that prompts the user to enter three integers and then prints the largest of the three.
 
+void HighestOfThree() {
+    int num1, num2, num3;
+    std::cout << "Please enter 3 numbers and the program will figure out which is the highest one.\n\t1st Number: ";
+    std::cin >> num1;
+    std::cout << "\t2nd Number: ";
+    std::cin >> num2;
+    std::cout << "\t3rd Number: ";
+    std::cin >> num3;
+    int highNumber = num1;
+    if(num2 > highNumber) {
+        highNumber = num2;
+    }
+    if (num3 > highNumber) {
+        highNumber = num3;
+    }
+    std::cout << "The highest out of " << num1 << ", " << num2 << " and " << num3 << " is: " << highNumber << std::endl; 
+}
+
+
 // Write a program that calculates and prints the sum of the first n natural numbers, where n is a positive integer entered by the user.
 
 // Write a program that takes an integer as input and prints its factorial.
@@ -64,4 +83,5 @@ int main() {
     // IsBool();
     // CircleAreaCirc(10);
     // StringLength("Hello World");
+    HighestOfThree();
 }
