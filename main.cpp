@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 // Write a program that takes two integers as input and prints their sum, difference, product, and quotient.
 void PrintSDPQ(double num1, double num2) {
@@ -10,9 +11,10 @@ void PrintSDPQ(double num1, double num2) {
         std::cout << "\tCannot divide by zero" << std::endl;
     } else {
         std::cout << "\tQuotient: " << num1 / num2 << std::endl;
-    }
-    
+    } 
 }
+
+
 // Write a program that prompts the user to enter a number and then prints whether the number is even or odd.
 
 void IsBool() {
@@ -25,8 +27,7 @@ void IsBool() {
         std::cout << "The number " << input << " is even" << std::endl;
     } else {
         std::cout << "The number, " << input << " is odd" << std::endl;
-    }
-    
+    }  
 }
 
 // Write a program that calculates and prints the area and circumference of a circle, given its radius.
@@ -38,6 +39,11 @@ void CircleAreaCirc(double radius) {
 }
 
 // Write a program that takes a string as input and prints the length of the string.
+
+void StringLength(std::string input) {
+    std::cout << input.size() << std::endl;
+}
+
 
 // Write a program that prompts the user to enter three integers and then prints the largest of the three.
 
@@ -52,8 +58,10 @@ void CircleAreaCirc(double radius) {
 // Write a program that takes a number as input and prints whether it is prime or not.
 
 int main() {
-  // PrintSDPQ(0, 2);
-  // PrintSDPQ(5, 25);
-  // IsBool();
-  CircleAreaCirc(10);
+    // PrintSDPQ(0, 2);
+    // PrintSDPQ(25, 5);
+    // PrintSDPQ(25, 0); 
+    // IsBool();
+    // CircleAreaCirc(10);
+    // StringLength("Hello World");
 }
