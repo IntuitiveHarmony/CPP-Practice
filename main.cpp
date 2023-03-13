@@ -68,6 +68,26 @@ void HighestOfThree() {
 
 // Write a program that calculates and prints the sum of the first n natural numbers, where n is a positive integer entered by the user.
 
+int sum(int n) {
+   if(n == 1) {
+        return 1;
+    } else {
+        return n + sum(n - 1);
+    } 
+}
+
+void PrintSum() {
+    int num;
+    std::cout << "Please enter a positive number and the program will sum all of its numbers: ";
+    std::cin >> num;
+    if(num > 0) {
+        std::cout << sum(num) << std::endl;
+    } else {
+        std::cout << num << " is not a positive number" << std::endl;
+    }
+}
+
+
 // Write a program that takes an integer as input and prints its factorial.
 
 // Write a program that prompts the user to enter a sentence and then prints the number of words in the sentence.
@@ -83,5 +103,6 @@ int main() {
     // IsBool();
     // CircleAreaCirc(10);
     // StringLength("Hello World");
-    HighestOfThree();
+    // HighestOfThree();
+    PrintSum();
 }
