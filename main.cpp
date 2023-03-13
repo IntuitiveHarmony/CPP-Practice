@@ -94,6 +94,20 @@ void PrintSum() {
 
 // Write a program that takes two strings as input and prints whether they are equal or not.
 
+void CheckStrings() {
+    std::string input1, input2;
+    std::cout << "Please enter two words and the program will check to see if they are the same.\n\t1st word: ";
+    std::cin >> input1;
+    std::cout << "\t2nd word: ";
+    std::cin >> input2;
+    if(input1 == input2) {
+        std::cout << "The two words, " << input1 << " and " << input2 << " are the same" << std::endl;
+    } else {
+        std::cout << "The two words, " << input1 << " and " << input2 << " are not the same" << std::endl;
+    }
+}
+
+
 // Write a program that takes a number as input and prints whether it is prime or not.
 
 int main() {
@@ -104,5 +118,6 @@ int main() {
     // CircleAreaCirc(10);
     // StringLength("Hello World");
     // HighestOfThree();
-    PrintSum();
+    // PrintSum();
+    CheckStrings();
 }
